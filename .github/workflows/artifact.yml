@@ -35,9 +35,7 @@ jobs:
 
     - name: Display the file
       run: |
-        cd artifacts/
-        cat hello.txt
-
+        3cat ./artifacts/hello.txt
 
 
 
