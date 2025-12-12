@@ -37,7 +37,8 @@ jobs:
       run: |
         mkdir artifacts
         mv hello.txt artifacts
-        cat ./artifacts/hello.txt
+        cd artifacts 
+        cat hello.txt
 
 
 
