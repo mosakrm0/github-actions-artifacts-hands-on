@@ -34,7 +34,9 @@ jobs:
         path: artifacts/hello.txt
 
     - name: Display the file
-      run: cat artifacts/hello.txt
+      run: |
+        cd artifacts/
+        cat hello.txt
 
 
 
