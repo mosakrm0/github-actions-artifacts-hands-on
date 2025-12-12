@@ -31,10 +31,12 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: hello-artifact
-        path: artifacts/hello.txt
+        path: hello.txt
 
     - name: Display the file
       run: |
+        mkdir artifacts
+        mv hello.txt artifacts
         cat ./artifacts/hello.txt
 
 
